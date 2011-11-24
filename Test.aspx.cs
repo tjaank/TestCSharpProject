@@ -26,7 +26,12 @@ namespace TestApplication
             //string dt1DayBefore = DateTime.Now.AddDays(-1).ToShortDateString();
             //string dt2DaysBefore = DateTime.Now.AddDays(-2).ToShortDateString();
             //string dt3DaysBefore = DateTime.Now.AddDays(-3).ToShortDateString();
+            
+            string s = "TestMode=0<br>MessageReceived=Dear Tim, The details you entered for eligiblity check for FSM for your childrens Dayton,Nyle,Ameyal were not found in FSM database<br>" +
+                        "MessageCount=1<br>From=SolihullMBC<br>CreditsAvailable=128.8<br>MessageLength=1<br>NumberContacts=1<br>CreditsRequired=0.9" +
+                        "<br>CreditsRemaining=127.9";
 
+            string creditRemaining = s.Substring(s.IndexOf("CreditsRemaining="), 4);
 
         }
         protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)

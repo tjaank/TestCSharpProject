@@ -122,15 +122,19 @@
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Sysnet\AD.aspx" />
-    <Content Include="Sysnet\Async-jQuery.aspx" />
-    <Content Include="Sysnet\Async.aspx" />
+    <Content Include="Async\Async-jQuery.aspx" />
+    <Content Include="Async\Async-Repeater.aspx" />
+    <Content Include="Async\Async.aspx" />
     <Content Include="Sysnet\Content.html" />
     <Content Include="Sysnet\Fields.aspx" />
     <Content Include="Sysnet\Footer.htm" />
     <Content Include="Sysnet\Header.htm" />
     <Content Include="Login.aspx" />
-    <Content Include="Sysnet\progress-indicator.gif" />
-    <Content Include="Sysnet\Site.css" />
+    <Content Include="Async\jquery-1.4.1.min.js" />
+    <Content Include="Async\progress-indicator.gif" />
+    <Content Include="Async\Revolver.js" />
+    <Content Include="Async\Site.css" />
+    <Content Include="Async\WeekPicker.aspx" />
     <Content Include="Test.aspx" />
     <Content Include="test2.aspx" />
     <Content Include="Web.config" />
@@ -331,18 +335,25 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sysnet\Async-jQuery.aspx.cs">
+    <Compile Include="Async\Async-jQuery.aspx.cs">
       <DependentUpon>Async-jQuery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sysnet\Async-jQuery.aspx.designer.cs">
+    <Compile Include="Async\Async-jQuery.aspx.designer.cs">
       <DependentUpon>Async-jQuery.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sysnet\Async.aspx.cs">
+    <Compile Include="Async\Async-Repeater.aspx.cs">
+      <DependentUpon>Async-Repeater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Async\Async-Repeater.aspx.designer.cs">
+      <DependentUpon>Async-Repeater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Async\Async.aspx.cs">
       <DependentUpon>Async.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sysnet\Async.aspx.designer.cs">
+    <Compile Include="Async\Async.aspx.designer.cs">
       <DependentUpon>Async.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sysnet\Fields.aspx.cs">
@@ -353,6 +364,13 @@
       <DependentUpon>Fields.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sysnet\LdapAuthentication.cs" />
+    <Compile Include="Async\WeekPicker.aspx.cs">
+      <DependentUpon>WeekPicker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Async\WeekPicker.aspx.designer.cs">
+      <DependentUpon>WeekPicker.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Test.aspx.cs">
       <DependentUpon>Test.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

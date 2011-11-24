@@ -4,3 +4,17 @@
 {
     background: url('progress-indicator.gif') no-repeat center;
 }
+.container
+{
+    display: table;
+}
+
+.row
+{
+    display: table-row;
+}
+
+.left, .right, .middle
+{
+    display: table-cell;
+}

@@ -158,8 +158,8 @@
     </div>
     <asp:Label ID="Label1" runat="server"></asp:Label>
     <asp:FileUpload ID="FileUpload1" runat="server"></asp:FileUpload>
-    <asp:Button ID="btnUpload" OnClick="Upload" runat="server" Text="Upload" OnClick="btnUpload_Click"
-        OnClientClick="return ValidateFile()"></asp:Button>
+    <asp:Button ID="btnUpload" runat="server" Text="Upload"
+        OnClientClick="javascript:return ValidateFile()"></asp:Button>
     <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" AutoGenerateRows="False"
         HeaderText="Flight Details">
         <Fields>
@@ -173,7 +173,7 @@
                 ReadOnly="True" SortExpression="FlightTakeOffDate" />
         </Fields>
     </asp:DetailsView>
-<asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="TextBox1"
+<%--<asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="TextBox1"
     ValidationExpression="\d+" Display="Static" EnableClientScript="true" ErrorMessage="Please enter numbers only"
     runat="server">
     </asp:RegularExpressionValidator>
@@ -187,7 +187,7 @@
 <asp:RegularExpressionValidator ControlToValidate="txtAge" 
     ErrorMessage="Please Enter Valid Age" ID="revtxtAge" runat="server" 
     SetFocusOnError="true" ValidationExpression="^\d+$">*
-</asp:RegularExpressionValidator>
+</asp:RegularExpressionValidator>--%>
     </form>
 </body>
 </html>

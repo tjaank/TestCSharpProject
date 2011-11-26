@@ -135,6 +135,7 @@
     <Content Include="Async\Revolver.js" />
     <Content Include="Async\Site.css" />
     <Content Include="Async\WeekPicker.aspx" />
+    <Content Include="Sysnet\jQuery-Calendar.aspx" />
     <Content Include="Test.aspx" />
     <Content Include="test2.aspx" />
     <Content Include="Web.config" />
@@ -362,6 +363,13 @@
     </Compile>
     <Compile Include="Sysnet\Fields.aspx.designer.cs">
       <DependentUpon>Fields.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sysnet\jQuery-Calendar.aspx.cs">
+      <DependentUpon>jQuery-Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sysnet\jQuery-Calendar.aspx.designer.cs">
+      <DependentUpon>jQuery-Calendar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sysnet\LdapAuthentication.cs" />
     <Compile Include="Async\WeekPicker.aspx.cs">
